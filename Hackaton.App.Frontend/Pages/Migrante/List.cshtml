@@ -1,8 +1,10 @@
 @page
-@{
+@model Hackaton.App.Frontend.Pages.ListMigranteModel
 }
 
-<table class="table table-hover">
+<h1>Listado de Migrantes</h1>
+
+<table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -21,13 +23,21 @@
 
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Juan</td>
-      <td>Serrano Osorio</td>
-      <td>Cedula Identidad</td>
-      <td>453523133</td>
-    </tr>
-     </tbody>
+  @foreach (var migrante in Model.Migrantes)
+    {
+        <tr>
+            <td>@migrante.id</td>
+            <td>@migrante.nombre</td>
+            <td>@migrante.apellidos</td>
+            <td>@migrante.tipo_documento</td>
+            <td>@migrante.identificacion</td>
+            <td>@migrante.pais_origen</td>
+            <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-busId="@migrante.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-busId="@migrante.id">Editar</a>
+              <a class="btn btn-danger" href="">Eliminar</a>
+              </td>
+        </tr>
+    }
 </table>
+
