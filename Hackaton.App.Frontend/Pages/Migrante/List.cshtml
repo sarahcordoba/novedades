@@ -1,5 +1,6 @@
 @page
 @model Hackaton.App.Frontend.Pages.ListMigranteModel
+@{
 }
 
 <h1>Listado de Migrantes</h1>
@@ -7,20 +8,18 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellidos</th>
-      <th scope="col">Tipo de Documento</th>
-      <th scope="col">Numero de Documento</th>
-      <th scope="col">Pais de Origen</th>
-      <th scope="col">Fecha de nacimiento</th>
-      <th scope="col">Email</th>
-      <th scope="col">Telefono</th>
-      <th scope="col">Direccion Actual</th>
-      <th scope="col">Ciudad</th>
-      <th scope="col">Situacion Laboral</th>
-
-
+      <td scope="col">#</td>
+      <td scope="col">Nombre</td>
+      <td scope="col">Apellidos</td>
+      <td scope="col">Tipo de Documento</td>
+      <td scope="col">Numero de Documento</td>
+      <td scope="col">Pais de Origen</td>
+      <td scope="col">Fecha de nacimiento</td>
+      <td scope="col">Email</td>
+      <td scope="col">Telefono</td>
+      <td scope="col">Direccion Actual</td>
+      <td scope="col">Ciudad</td>
+      <td scope="col">Situacion Laboral</td>
     </tr>
   </thead>
   @foreach (var migrante in Model.Migrantes)
@@ -32,9 +31,15 @@
             <td>@migrante.tipo_documento</td>
             <td>@migrante.identificacion</td>
             <td>@migrante.pais_origen</td>
+            <td>@migrante.fecha_nacimiento</td>
+            <td>@migrante.email</td>
+            <td>@migrante.telefono</td>
+            <td>@migrante.direccion_actual</td>
+            <td>@migrante.ciudad</td>
+            <td>@migrante.situacion_laboral</td>
             <td>
-              <a class="btn btn-info" asp-page="./Details" asp-route-busId="@migrante.id"><i class="fas fa-adjust"></i>Ver</a>
-              <a class="btn btn-info" asp-page="./Edit" asp-route-busId="@migrante.id">Editar</a>
+              <a class="btn btn-info" asp-page="./Details" asp-route-migranteId="@migrante.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-migranteId="@migrante.id">Editar</a>
               <a class="btn btn-danger" href="">Eliminar</a>
               </td>
         </tr>

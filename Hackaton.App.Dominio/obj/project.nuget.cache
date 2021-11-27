@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gqnBbKJ/CO/9o4fS4GnPiC2h3pxoZ/vG5FUUbC9z3GJOy/87xQLkycmeIf3AEpWvv7X/1HWzTevK7LpZxierfQ==",
+  "dgSpecHash": "H+yqutpY2oh9tvpI8YSwF4e6pGASVlKHSL0aCMNVaapP8RpM44jw+SCqELKrBTpWsnIg99OXOLHIawRQCDjHpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj",
+  "projectFilePath": "D:\\AVP\\MISIONTIC\\HACKATON\\Proyecto\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Efrain\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Efrain\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Anamaria Venegas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Anamaria Venegas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

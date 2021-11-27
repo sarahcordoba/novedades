@@ -26,7 +26,7 @@ namespace Hackaton.App.Frontend
         
         {
             services.AddRazorPages();
-            services.AddSingleton<RepositorioMigrantes, RepositorioMigrantes>();
+            services.AddSingleton<RepositorioMigrante, RepositorioMigrante>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

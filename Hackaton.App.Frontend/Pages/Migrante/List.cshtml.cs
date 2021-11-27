@@ -13,10 +13,10 @@ namespace Hackaton.App.Frontend.Pages
 {
     public class ListMigranteModel : PageModel
     {
-        private readonly RepositorioMigrantes repositorioMigrantes;
-        public IEnumerable<Migrantes> Migrantes { get; set; }
+        private readonly RepositorioMigrante repositorioMigrantes;
+        public IEnumerable<Migrante> Migrantes { get; set; }
 
-        public ListMigranteModel(RepositorioMigrantes repositorioMigrantes)
+        public ListMigranteModel(RepositorioMigrante repositorioMigrantes)
         {
             this.repositorioMigrantes = repositorioMigrantes;
         }
