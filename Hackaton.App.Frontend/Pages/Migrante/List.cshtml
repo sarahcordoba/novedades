@@ -8,41 +8,44 @@
 <table class="table">
   <thead>
     <tr>
-      <td scope="col">#</td>
-      <td scope="col">Nombre</td>
-      <td scope="col">Apellidos</td>
-      <td scope="col">Tipo de Documento</td>
-      <td scope="col">Numero de Documento</td>
-      <td scope="col">Pais de Origen</td>
-      <td scope="col">Fecha de nacimiento</td>
-      <td scope="col">Email</td>
-      <td scope="col">Telefono</td>
-      <td scope="col">Direccion Actual</td>
-      <td scope="col">Ciudad</td>
-      <td scope="col">Situacion Laboral</td>
+      <th scope="col">#</td>
+      <th scope="col">Nombre</td>
+      <th scope="col">Apellidos</td>
+      <th scope="col">Tipo de Documento</td>
+      <th scope="col">Numero de Documento</td>
+      <th scope="col">Pais de Origen</td>
+      <th scope="col">Fecha de nacimiento</td>
+      <th scope="col">Email</td>
+      <th scope="col">Telefono</td>
+      <th scope="col">Direccion Actual</td>
+      <th scope="col">Ciudad</td>
+      <th scope="col">Situacion Laboral</td>
     </tr>
   </thead>
   @foreach (var migrante in Model.Migrantes)
-    {
-        <tr>
-            <td>@migrante.id</td>
-            <td>@migrante.nombre</td>
-            <td>@migrante.apellidos</td>
-            <td>@migrante.tipo_documento</td>
-            <td>@migrante.identificacion</td>
-            <td>@migrante.pais_origen</td>
-            <td>@migrante.fecha_nacimiento</td>
-            <td>@migrante.email</td>
-            <td>@migrante.telefono</td>
-            <td>@migrante.direccion_actual</td>
-            <td>@migrante.ciudad</td>
-            <td>@migrante.situacion_laboral</td>
-            <td>
-              <a class="btn btn-info" asp-page="./Details" asp-route-migranteId="@migrante.id"><i class="fas fa-adjust"></i>Ver</a>
-              <a class="btn btn-info" asp-page="./Edit" asp-route-migranteId="@migrante.id">Editar</a>
-              <a class="btn btn-danger" href="">Eliminar</a>
-              </td>
-        </tr>
-    }
+  {
+    <tr>
+      <td>@migrante.id</td>
+      <td>@migrante.nombre</td>
+      <td>@migrante.apellidos</td>
+      <td>@migrante.tipo_documento</td>
+      <td>@migrante.identificacion</td>
+      <td>@migrante.pais_origen</td>
+      <td>@migrante.fecha_nacimiento</td>
+      <td>@migrante.email</td>
+      <td>@migrante.telefono</td>
+      <td>@migrante.direccion_actual</td>
+      <td>@migrante.ciudad</td>
+      <td>@migrante.situacion_laboral</td>
+      <td>
+        <a class="btn btn-info" asp-page="./Details" asp-route-migranteId="@migrante.id"><i
+          class="fas fa-adjust"></i>Ver Mis Datos</a>
+        <a class="btn btn-info" asp-page="./Edit" asp-route-migranteId="@migrante.id">Actualizar mis Datos</a>
+        <form method="POST">
+          <input type="number" class="form-control d-none" id="id" name="id" placeholder="id" asp-for="@migrante.id">
+          <button type="submit" class="btn btn-danger" href="">Darme de Baja</button>
+        </form>
+      </td>
+    </tr>
+  }
 </table>
-

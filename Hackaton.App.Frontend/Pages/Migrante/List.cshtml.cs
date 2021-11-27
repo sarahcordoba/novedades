@@ -6,26 +6,38 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Hackaton.App.Persistencia.AppRepositorios;
 using Hackaton.App.Dominio;
-
-
-
+ 
 namespace Hackaton.App.Frontend.Pages
 {
     public class ListMigranteModel : PageModel
     {
-        private readonly RepositorioMigrante repositorioMigrantes;
-        public IEnumerable<Migrante> Migrantes { get; set; }
+       
+        private readonly RepositorioMigrantes repositorioMigrantes;
+        public IEnumerable<Migrantes> Migrantes {get;set;}
+        [BindProperty]
+        public Migrantes Migrante {get;set;}
+ 
+    public ListMigranteModel(RepositorioMigrantes repositorioMigrantes)
+    {
+        this.repositorioMigrantes=repositorioMigrantes;
+     }
+ 
+    public void OnGet()
+    {
+        Migrantes=repositorioMigrantes.GetAll();
+    }
 
-        public ListMigranteModel(RepositorioMigrante repositorioMigrantes)
+     public IActionResult OnPost()
+    {
+        if(Migrante.id>0)
         {
-            this.repositorioMigrantes = repositorioMigrantes;
+        repositorioMigrantes.Delete(Migrante.id);
         }
+        return RedirectToPage("./List");
+    }
 
-    
-        public void OnGet()
-        {
-            Migrantes = repositorioMigrantes.GetAll();
 
-        }
+
+
     }
 }

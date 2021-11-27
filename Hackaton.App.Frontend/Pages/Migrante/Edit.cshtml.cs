@@ -9,27 +9,34 @@ using Hackaton.App.Dominio;
 
 namespace Hackaton.App.Frontend.Pages
 {
-    public class FormMigranteModel : PageModel
+    public class EditMigranteModel : PageModel
     {
         private readonly RepositorioMigrantes repositorioMigrantes;
+
         [BindProperty]
-        public Migrantes Migrante {get;set;}
-        public FormMigranteModel(RepositorioMigrantes repositorioMigrantes)
-        {
-            this.repositorioMigrantes=repositorioMigrantes;
-        }
-        public void OnGet()
-        {
+        public Migrantes Migrante {get; set;}
 
+        public EditMigranteModel(RepositorioMigrantes repositorioMigrantes)
+        {
+            this.repositorioMigrantes = repositorioMigrantes;
         }
 
+        public IActionResult OnGet(int migranteId)
+        {
+            Migrante = repositorioMigrantes.GetMigranteWithId(migranteId);
+            return Page();
+
+        }
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-            Migrante = repositorioMigrantes.Create(Migrante);
+            if (Migrante.id>0)
+            {
+                Migrante = repositorioMigrantes.Update(Migrante);
+            }
             return RedirectToPage("./List");
         }
 

@@ -1,0 +1,24 @@
+@page
+@model Hackaton.App.Frontend.Pages.DetailsMigranteModel
+@{
+    var migrante = Model.Migrante;
+}
+ 
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"> <b>id: </b> @migrante.id</li>
+  <li class="list-group-item"> <b>Nombre: </b> @migrante.nombre</li>
+  <li class="list-group-item"> <b>Apellidos: </b> @migrante.apellidos</li>
+  <li class="list-group-item"><b>Tipo de Documento: </b> @migrante.tipo_documento</li>
+  <li class="list-group-item"><b>Identificacion: </b> @migrante.identificacion</li>
+  <li class="list-group-item"><b>Pais Origen: </b> @migrante.pais_origen </li>
+  <li class="list-group-item"><b>Fecha de Nacimiento: </b> @migrante.fecha_nacimiento </li>
+  <li class="list-group-item"><b>Email: </b> @migrante.email</li>
+  <li class="list-group-item"><b>Telefono: </b> @migrante.telefono</li>
+  <li class="list-group-item"><b>Direcion Actual: </b> @migrante.direccion_actual</li>
+  <li class="list-group-item"><b>Ciudad: </b> @migrante.ciudad</li>
+  <li class="list-group-item"><b>Situacion Laboral: </b> @migrante.situacion_laboral</li>
+
+
+
+
+</ul>    
