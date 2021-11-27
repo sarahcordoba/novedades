@@ -5835,19 +5835,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {}
+    "C:\\Users\\Efrain\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
       "projectName": "Hackaton.App.Consola",
-      "projectPath": "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Consola\\obj\\",
+      "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\Efrain\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Efrain\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5858,8 +5858,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj"
+            "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj"
             }
           }
         }
@@ -5909,7 +5909,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.415\\RuntimeIdentifierGraph.json"
       }
     }
   }
