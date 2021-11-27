@@ -1520,6 +1520,31 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Hackaton.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Hackaton.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hackaton.App.Dominio.dll": {}
+        }
+      },
+      "Hackaton.App.Persistencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Hackaton.App.Dominio": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hackaton.App.Persistencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hackaton.App.Persistencia.dll": {}
+        }
       }
     }
   },
@@ -5788,10 +5813,21 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Hackaton.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Hackaton.App.Dominio/Hackaton.App.Dominio.csproj",
+      "msbuildProject": "../Hackaton.App.Dominio/Hackaton.App.Dominio.csproj"
+    },
+    "Hackaton.App.Persistencia/1.0.0": {
+      "type": "project",
+      "path": "../Hackaton.App.Persistencia/Hackaton.App.Persistencia.csproj",
+      "msbuildProject": "../Hackaton.App.Persistencia/Hackaton.App.Persistencia.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Hackaton.App.Persistencia >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
@@ -5821,7 +5857,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Diego\\Desktop\\Hackaton\\Hackaton.App\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

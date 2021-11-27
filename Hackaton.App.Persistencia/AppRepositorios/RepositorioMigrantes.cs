@@ -2,31 +2,66 @@ using System.Collections.Generic;
 using Hackaton.App.Dominio;
 using System.Linq;
 using System;
- 
+
 namespace Hackaton.App.Persistencia.AppRepositorios
 {
     public class RepositorioMigrantes
     {
+
         List<Migrantes> migrantes;
- 
-    public RepositorioMigrantes()
-        {
-            buses= new List<Migrantes>()
-            {
-                new Buses{id=1,marca="Audi",modelo= 2020,kilometraje= 100000,numero_asientos= 4,placa= "POP678"},
-                new Buses{id=2,marca="Toyota",modelo= 2021,kilometraje= 90000,numero_asientos= 16,placa= "OIU859"},
-                new Buses{id=3,marca="Mazda",modelo= 2000,kilometraje= 150000,numero_asientos= 24,placa= "YUH859"}
- 
-            };
-        }
- 
+        private readonly AppContext _appContext = new AppContext();
+
+
         public IEnumerable<Migrantes> GetAll()
         {
-            return Migrantes;
+
+            return _appContext.Migrantes;// retorna la informacion que se encuentra en aviones(base de datos)
         }
- 
-        public Migrantes GetMigrantesWithId(int id){
-            return migrantes.SingleOrDefault(b => b.id == id);
+
+        public Migrantes Create(Migrantes newMigrante)
+        {
+
+            var addMigrante = _appContext.Migrantes.Add(newMigrante);
+            _appContext.SaveChanges();
+            return addMigrante.Entity;
         }
+
+        public Migrantes GetMigranteWithId(int Id)
+        {
+
+            return _appContext.Migrantes.Find(Id);
+        }
+
+        public Migrantes Update(Migrantes newMigrante)
+        {
+            var migrante = _appContext.Migrantes.Find(newMigrante.id);
+            if (migrante != null)
+            {
+                migrante.nombre = newMigrante.nombre;
+                migrante.apellidos = newMigrante.apellidos;
+                migrante.tipo_documento = newMigrante.tipo_documento;
+                migrante.identificacion = newMigrante.identificacion;
+                migrante.fecha_nacimiento = newMigrante.fecha_nacimiento;
+                migrante.email = newMigrante.email;
+                migrante.telefono = newMigrante.telefono;
+                migrante.direccion_actual = newMigrante.direccion_actual;
+                migrante.ciudad = newMigrante.ciudad;
+                migrante.situacion_laboral = newMigrante.pais_origen;
+
+                _appContext.SaveChanges(); //Guarda en base de Datos
+            }
+            return migrante;
+        }
+
+        public void Delete(int Id)
+        {
+
+            var migrante = _appContext.Migrantes.Find(Id);
+            if (migrante == null)
+                return;
+            _appContext.Migrantes.Remove(migrante);
+            _appContext.SaveChanges();
+        }
+
     }
 }
