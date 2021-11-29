@@ -1,0 +1,12 @@
+@page
+@model Hackaton.App.Frontend.Pages.DetailsNovedadModel
+@{
+    var novedad = Model.Novedad;
+}
+ 
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"> <b>id: </b> @novedad.id</li>
+  <li class="list-group-item"> <b>Fecha de novedad: </b> @novedad.fecha_de_novedad</li>
+  <li class="list-group-item"> <b>Dias novedad activa: </b> @novedad.dias_novedad_activa</li>
+  <li class="list-group-item"><b>Texto explicativo: </b> @novedad.texto_explicativo</li>
+</ul>	

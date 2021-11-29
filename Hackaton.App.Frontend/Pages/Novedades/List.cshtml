@@ -1,0 +1,25 @@
+@page
+@model Hackaton.App.Frontend.Pages.ListNovedadModel
+@{
+}
+ 
+<h1>Listado de Novedades</h1>
+<table class="table">
+    @foreach (var novedad in Model.Novedades)
+    {
+        <tr>
+            <td>@novedad.id</td>
+            <td>@novedad.fecha_de_novedad</td>
+            <td>@novedad.dias_novedad_activa</td>
+            <td>@novedad.texto_explicativo</td>
+            <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-novedadId="@novedad.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-novedadId="@novedad.id">Editar</a>
+              <form method="POST">
+            <input type="number" class="d-none" id="id" asp-for="@novedad.id">
+              <button type="submit"class="btn btn-danger">Eliminar</button>
+            </form>
+              </td>
+        </tr>
+    }
+</table>

@@ -62,6 +62,27 @@ namespace Hackaton.App.Persistencia.Migrations
 
                     b.ToTable("Migrantes");
                 });
+
+            modelBuilder.Entity("Hackaton.App.Dominio.Novedades", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("dias_novedad_activa")
+                        .HasColumnType("int");
+
+                    b.Property<string>("fecha_de_novedad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("texto_explicativo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Novedades");
+                });
 #pragma warning restore 612, 618
         }
     }

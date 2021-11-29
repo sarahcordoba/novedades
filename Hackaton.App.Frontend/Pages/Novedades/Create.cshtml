@@ -1,0 +1,20 @@
+@page
+@model Hackaton.App.Frontend.Pages.FormNovedadModel
+@{
+    var novedad = Model.Novedad;
+}
+<div class="text-center">
+  <form method="POST">
+    <label for="fecha_de_novedad" class="form-label">Fecha de novedad:</label>
+<input type="text" class="form-control" id="fecha_de_novedad" placeholder="Fecha de novedad" asp-for="@novedad.fecha_de_novedad">
+    <label for="dias_novedad_activa" class="form-label">Dias novedad activa:</label>
+    <input type="number" class="form-control" id="dias_novedad_activa" placeholder="Dias novedad activa" asp-for="@novedad.dias_novedad_activa">
+    <label for="texto_explicativo" class="form-label">Texto explicativo: </label>
+    
+<input type="text" class="form-control" id="texto_explicativo" placeholder="Texto explicativo" asp-for="@novedad.texto_explicativo">
+    
+
+    <hr>
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>

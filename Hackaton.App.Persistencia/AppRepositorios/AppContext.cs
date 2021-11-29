@@ -6,6 +6,7 @@ namespace Hackaton.App.Persistencia
     public class AppContext : DbContext
     {
         public DbSet<Migrantes> Migrantes { get; set; }
+        public DbSet<Novedades> Novedades { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

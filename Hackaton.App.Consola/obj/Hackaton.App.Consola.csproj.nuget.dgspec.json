@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj": {}
+    "E:\\Desktop\\Hac111katon\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj": {
+    "E:\\Desktop\\Hac111katon\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
+        "projectUniqueName": "E:\\Desktop\\Hac111katon\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
         "projectName": "Hackaton.App.Consola",
-        "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
-        "packagesPath": "C:\\Users\\Efrain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Consola\\obj\\",
+        "projectPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Consola\\Hackaton.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\Carlos Cordoba\\.nuget\\packages\\",
+        "outputPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Efrain\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Carlos Cordoba\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -25,8 +25,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
-                "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj"
+              "E:\\Desktop\\Hac111katon\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
+                "projectPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj"
               }
             }
           }
@@ -76,21 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj": {
+    "E:\\Desktop\\Hac111katon\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj",
+        "projectUniqueName": "E:\\Desktop\\Hac111katon\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj",
         "projectName": "Hackaton.App.Dominio",
-        "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Efrain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\obj\\",
+        "projectPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Carlos Cordoba\\.nuget\\packages\\",
+        "outputPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Efrain\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Carlos Cordoba\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -133,21 +133,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
+    "E:\\Desktop\\Hac111katon\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj",
+        "projectUniqueName": "E:\\Desktop\\Hac111katon\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj",
         "projectName": "Hackaton.App.Persistencia",
-        "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Efrain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Persistencia\\obj\\",
+        "projectPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Persistencia\\Hackaton.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\Carlos Cordoba\\.nuget\\packages\\",
+        "outputPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Efrain\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Carlos Cordoba\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -158,8 +158,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\Efrain\\Documents\\Hackaton\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj"
+              "E:\\Desktop\\Hac111katon\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj": {
+                "projectPath": "E:\\Desktop\\Hac111katon\\Hackaton.App.Dominio\\Hackaton.App.Dominio.csproj"
               }
             }
           }
@@ -209,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     }
